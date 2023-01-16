@@ -1,8 +1,59 @@
+@use "./resets/resets";
 @use "./colors/colors";
 @use "./typography/typography";
 @use "./responsive/responsive";
 
 * {
   font-family: typography.$font-family;
-  background-color: colors.$color-gradient-button;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  // justify-content: space-between;
+  > img {
+    width: 100%;
+  }
+}
+
+.card-head {
+  height: 70px;
+  padding: 20px 0 0 10px;
+}
+
+.card-text {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  gap: 30px;
+}
+
+.card-title {
+  margin: 70px auto 0 auto;
+  margin-right: auto;
+  width: 40%;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+}
+
+h2 {
+  font-size: 40px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 10px;
+
+  span {
+    color: colors.$color-desaturated-red;
+    font-weight: 200;
+  }
+}
+
+.card-information {
+  color: colors.$color-desaturated-red;
+  text-align: center;
+  width: 80%;
+  margin: 0 auto 0 auto;
 }
