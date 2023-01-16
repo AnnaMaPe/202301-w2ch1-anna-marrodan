@@ -1,0 +1,8 @@
+@use "./colors/colors";
+@use "./typography/typography";
+@use "./responsive/responsive";
+
+* {
+  font-family: typography.$font-family;
+  background-color: colors.$color-gradient-button;
+}
